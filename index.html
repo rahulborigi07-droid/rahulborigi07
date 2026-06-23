@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Rahul Borigi</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:'Segoe UI',sans-serif;
+    background:#0d1117;
+    color:#e6edf3;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+  }
+  .card{
+    background:#161b22;
+    border:1px solid #30363d;
+    border-radius:20px;
+    max-width:480px;
+    width:100%;
+    overflow:hidden;
+    box-shadow:0 8px 40px rgba(0,0,0,0.5);
+    animation:fadeUp .6s ease;
+  }
+  @keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+  .banner{
+    height:90px;
+    background:linear-gradient(135deg,#1f6feb,#8b5cf6);
+    position:relative;
+  }
+  .avatar-wrap{
+    position:absolute;
+    bottom:-44px;
+    left:50%;
+    transform:translateX(-50%);
+  }
+  .avatar{
+    width:88px;height:88px;
+    border-radius:50%;
+    border:4px solid #161b22;
+    background:linear-gradient(135deg,#1f6feb,#8b5cf6);
+    display:flex;align-items:center;justify-content:center;
+    font-size:2rem;font-weight:700;color:#fff;
+    letter-spacing:1px;
+  }
+  .body{padding:56px 28px 28px;}
+  .name{text-align:center;font-size:1.5rem;font-weight:700;color:#e6edf3;}
+  .role{text-align:center;color:#8b5cf6;font-size:.9rem;margin-top:4px;font-weight:500;letter-spacing:.5px;}
+  .college{
+    text-align:center;color:#8b949e;font-size:.82rem;margin-top:6px;
+  }
+  .divider{height:1px;background:#30363d;margin:22px 0;}
+  .section-title{
+    font-size:.75rem;font-weight:600;letter-spacing:1px;
+    color:#8b949e;text-transform:uppercase;margin-bottom:12px;
+  }
+  .info-list{display:flex;flex-direction:column;gap:12px;}
+  .info-item{
+    display:flex;align-items:flex-start;gap:12px;
+    background:#0d1117;border:1px solid #30363d;
+    border-radius:10px;padding:12px 14px;
+    transition:border-color .2s;
+  }
+  .info-item:hover{border-color:#8b5cf6;}
+  .info-item i{
+    width:18px;text-align:center;
+    color:#8b5cf6;margin-top:2px;font-size:.95rem;flex-shrink:0;
+  }
+  .info-text{display:flex;flex-direction:column;gap:2px;}
+  .info-label{font-size:.7rem;color:#8b949e;text-transform:uppercase;letter-spacing:.5px;}
+  .info-value{font-size:.88rem;color:#e6edf3;word-break:break-word;}
+  .info-value a{color:#58a6ff;text-decoration:none;}
+  .info-value a:hover{text-decoration:underline;}
+  .socials{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .social-btn{
+    display:flex;align-items:center;gap:8px;
+    background:#0d1117;border:1px solid #30363d;
+    border-radius:10px;padding:11px 14px;
+    text-decoration:none;color:#e6edf3;
+    font-size:.85rem;transition:all .2s;
+  }
+  .social-btn:hover{border-color:#8b5cf6;color:#8b5cf6;transform:translateY(-2px);}
+  .social-btn i{font-size:1rem;}
+  .li i{color:#0a66c2;} .li:hover i{color:#8b5cf6;}
+  .yt i{color:#ff4444;} .ig i{color:#e1306c;} .web i{color:#1f6feb;}
+  .footer{text-align:center;color:#484f58;font-size:.72rem;margin-top:22px;}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="banner">
+    <div class="avatar-wrap">
+      <div class="avatar">RB</div>
+    </div>
+  </div>
+  <div class="body">
+    <div class="name">Rahul Borigi</div>
+    <div class="role">⚡ VLSI & Embedded Engineer</div>
+    <div class="college">Aditya Institute of Technology and Management (AITAM)</div>
+
+    <div class="divider"></div>
+    <div class="section-title">Contact Info</div>
+    <div class="info-list">
+      <div class="info-item">
+        <i class="fa-solid fa-phone"></i>
+        <div class="info-text">
+          <span class="info-label">Mobile</span>
+          <span class="info-value"><a href="tel:+919704260243">+91 97042 60243</a></span>
+        </div>
+      </div>
+      <div class="info-item">
+        <i class="fa-solid fa-envelope"></i>
+        <div class="info-text">
+          <span class="info-label">Email</span>
+          <span class="info-value"><a href="mailto:rahulborigi07@gmail.com">rahulborigi07@gmail.com</a></span>
+        </div>
+      </div>
+      <div class="info-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <div class="info-text">
+          <span class="info-label">Address</span>
+          <span class="info-value">Near Hanuman Temple, Srinivasa Nagar,<br>Tekkali – 532 201,<br>Srikakulam District, Andhra Pradesh</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+    <div class="section-title">Find Me Online</div>
+    <div class="socials">
+      <a class="social-btn gh" href="https://github.com/rahulborigi07-droid" target="_blank">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+      <a class="social-btn yt" href="https://youtube.com/@rahulborigi" target="_blank">
+        <i class="fa-brands fa-youtube"></i> YouTube
+      </a>
+      <a class="social-btn ig" href="https://instagram.com/rahulborigi_07" target="_blank">
+        <i class="fa-brands fa-instagram"></i> Instagram
+      </a>
+      <a class="social-btn web" href="https://rahulborigi07-droid.github.io" target="_blank">
+        <i class="fa-solid fa-globe"></i> Rahul Borigi
+      </a>
+      <a class="social-btn li" href="https://www.linkedin.com/in/rahul-borigi" target="_blank" style="grid-column:span 2;">
+        <i class="fa-brands fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+
+    <div class="footer">© 2026 Rahul Borigi · All rights reserved</div>
+  </div>
+</div>
+</body>
+</html>
